@@ -3,6 +3,7 @@ import { defaultTheme } from 'vuepress'
 
 export default defineUserConfig({
   title: "Hello sword4869/vuepress-starter2",
+  base: "/vuepress2-starter/",
   theme: defaultTheme({
     sidebar: {
         "/": [
