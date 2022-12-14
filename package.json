@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.59",
-    "vuepress-theme-hope": "^2.0.0-beta.141"
+    "vuepress-theme-hope": "^2.0.0-beta.143"
   }
 }

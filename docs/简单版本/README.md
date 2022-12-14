@@ -2,6 +2,7 @@
 ```bash
 yarn init
 yarn add -D vuepress@next
+yarn upgrade
 mkdir docs
 
 mkdir -p docs/.vuepress
@@ -9,6 +10,8 @@ touch docs/.vuepress/config.ts
 
 touch .gitignore
 ```
+
+很奇怪, 有好几次出错都用`yarn upgrade`解决了.
 ## package.json
 
 ```js
@@ -22,6 +25,7 @@ touch .gitignore
 docs/.vuepress/*
 !docs/.vuepress/config.ts
 node_modules
+yarn-error.log
 ```
 
 ## config.ts
@@ -31,7 +35,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
 
 export default defineUserConfig({
-  title: "Hello sword4869/vuepress2-starter",
+  title: "Hello vuepress2-starter",
   base: "/vuepress2-starter/",
   theme: defaultTheme({
     sidebar: {
