@@ -14,9 +14,34 @@ touch .gitignore
 ```
 
 使用主题`vuepress-theme-hope`: 
+
 - 带复制功能
+
 - 统计阅读时长
-- 右侧标题展示
+
+- 右侧标题展示(自动的，屏幕大就放在右边，屏幕小就融合进sidebar里)。
+  
+  <details>
+  <summary>具体设置</summary>
+
+  注意：文档必须只有一级标题，其他都是该一级标题下的子标题才能正确显示。显示顶多到三级标题，四级标题就不显示了。
+
+  toc关闭：默认是true
+  ```ts
+  hopeTheme({
+    toc: false
+  })
+  ```
+  也可以设置headerDepth
+  ```ts
+  hopeTheme({
+    headerDepth: 0
+  })
+  ```
+  0关闭，1，只显示二级标题，2只显示三级标题，其他数字无效。
+
+  </details>
+
 
 ## package.json
 
