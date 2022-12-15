@@ -80,6 +80,28 @@ export default defineUserConfig({
   docsDir默认是'', 所以要写'docs'
 ## github action
 
+```yaml
+name: Build and Deploy
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: vuepress-deploy
+        uses: sword4869/vuepress-deploy@main
+        env:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_BRANCH: gh-pages
+          BUILD_SCRIPT: yarn install && yarn vuepress:build
+          BUILD_DIR: docs/.vuepress/dist/
+```
+或者
 ```yml
 name: Build and Deploy
 on: 
