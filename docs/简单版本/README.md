@@ -4,6 +4,7 @@ yarn init
 yarn add -D vuepress@next
 yarn upgrade
 mkdir docs
+touch docs/README.md
 
 mkdir -p docs/.vuepress
 touch docs/.vuepress/config.ts

@@ -5,6 +5,7 @@ yarn add -D vuepress@next vuepress-theme-hope@next
 yarn upgrade
 
 mkdir docs
+touch docs/README.md
 
 mkdir -p docs/.vuepress
 touch docs/.vuepress/config.ts
