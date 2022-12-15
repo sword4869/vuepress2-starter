@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
 
 export default defineUserConfig({
-  title: "Hello vuepress2-starter",
+  title: "Hello sword4869/vuepress2-starter",
   base: "/vuepress2-starter/",
   theme: hopeTheme({
     repo: "sword4869/vuepress2-starter",
