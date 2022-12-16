@@ -10,6 +10,9 @@ touch docs/README.md
 mkdir -p docs/.vuepress
 touch docs/.vuepress/config.ts
 
+mkdir -p .github/workflows
+touch .github/workflows/ci.yml
+
 touch .gitignore
 ```
 
