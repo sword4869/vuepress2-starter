@@ -1,3 +1,5 @@
+Errors resolution: https://github.com/sword4869/vuepress-deploy/blob/main/docs/why_build_failure.md
+
 ## bash
 ```bash
 yarn init
@@ -13,27 +15,6 @@ mkdir -p .github/workflows
 touch .github/workflows/ci.yml
 
 touch .gitignore
-```
-
-
-yarn.lock的问题: 有时候`yarn upgrade`后还是`vuepress-vite@2.0.0-beta.50`, 只能手动修改
-```
-vuepress-vite@2.0.0-beta.59:
-  version "2.0.0-beta.59"
-  resolved "https://registry.npmmirror.com/vuepress-vite/-/vuepress-vite-2.0.0-beta.59.tgz#8f25504cc0679d816b762c35ffbbb4079b5fffdf"
-  integrity sha512-DyUsTkixrvUQjfxUdRv/uNotrQeOxVQisk6Szo0ukvZQGpet9/aMqAmYFwJy8Xd1od30f+h4M9KNhBM8N9sm1g==
-  dependencies:
-    "@vuepress/bundler-vite" "2.0.0-beta.59"
-    "@vuepress/cli" "2.0.0-beta.59"
-    "@vuepress/core" "2.0.0-beta.59"
-    "@vuepress/theme-default" "2.0.0-beta.59"
-
-vuepress@^2.0.0-beta.59:
-  version "2.0.0-beta.59"
-  resolved "https://registry.npmmirror.com/vuepress/-/vuepress-2.0.0-beta.59.tgz#ed1b8a61a9ec0c6de198ea75168c26f428b51912"
-  integrity sha512-ggFuq1jKVwF1f0PK5SR3mAi34PHDLvNDiNbC1Qw5XZR7qs9ryutsbFUkfpa9R4rnGnw0uoohiyE4itANWVcvtw==
-  dependencies:
-    vuepress-vite "2.0.0-beta.59"
 ```
 ## package.json
 
